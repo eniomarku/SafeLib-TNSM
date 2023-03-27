@@ -1,0 +1,6 @@
+[submodule "SafeLib"]
+	path = SafeLib
+	url = https://github.com/eniomarku/SafeLib
+[submodule "Lib2/SafeLib"]
+	path = Lib2/SafeLib
+	url = https://github.com/eniomarku/SafeLib
