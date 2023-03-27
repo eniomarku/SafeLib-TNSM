@@ -1,7 +1,7 @@
 # SafeLib-TNSM
 
 SafeLib is a library used to securely outsource VNFs into a third party provider such as cloud environmnet. <br />
-It is compromised of three libraries.
+It is compromised of three libraries. 
 ## Lib1 
    This library is very simple and should mainly be used for outsourcing simple VNFs.<br />
    There is no repository of such library in our github because to use Lib1 no code is needed. <br />
