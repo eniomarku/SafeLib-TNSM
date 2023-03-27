@@ -1,0 +1,5 @@
+PAL {
+    # rider added 2021-8-4 for netmap control: ocall_l3vnf_create_server;
+    global: $(PAL_SYMBOLS) ocall_l3vnf_create_server;
+    local: *;
+};

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "deque": "cpp",
+        "format": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "fstream": "c",
+        "xlocmes": "c",
+        "chrono": "cpp"
+    }
+}

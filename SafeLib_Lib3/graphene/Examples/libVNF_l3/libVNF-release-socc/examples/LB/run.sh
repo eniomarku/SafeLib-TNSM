@@ -1,0 +1,1 @@
+g++ -o load_balancer -I /home/nuc/L3VNF/netmap/sys/ -fpermissive -std=c++11 load_balancer.cpp  -DLIBVNF_STACK=3 -lvnf-l3-static -lboost_system -ll3vnfdummy -lIPSec_MB
