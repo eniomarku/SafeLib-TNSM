@@ -11,10 +11,11 @@ It is compromised of three libraries.
 ## Lib2
   The source code of this library can be found in https://github.com/eniomarku/SafeLib. <br />
   This library is used to for developing stateful VNFs, and securely outsourcing them into a third party provider.<br />
-  Please read README.md at https://github.com/eniomarku/SafeLib to see how to build and run Lib2. <br />
-  Note that https://github.com/eniomarku/SafeLib-TNSM/SafeLib_Lib2 is a copy of https://github.com/eniomarku/SafeLib. <br />
+  Please check README.md at https://github.com/eniomarku/SafeLib to see how to build and run Lib2. <br />
+  Note that https://github.com/eniomarku/SafeLib-TNSM/Lib2 is a submodule of https://github.com/eniomarku/SafeLib-TNSM. <br />
   If you want to only use Lib2 of SafeLib we recommend you to clone https://github.com/eniomarku/SafeLib. <br />
-  If you want to use both Lib2 and Lib3 of SafeLib we recommend you to clone https://github.com/eniomarku/SafeLib-TNSM.<br />
+  If you want to use both Lib2 and Lib3 of SafeLib we recommend you to clone this repository using the following command;
+  git clone https://github.com/eniomarku/SafeLib-TNSM --recursive <br />
     
 ## Lib3
    This library is used for developing stateless VNFs, and securely outsourcing them into a third party provider. <br />
