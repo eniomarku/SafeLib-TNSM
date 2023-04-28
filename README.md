@@ -41,4 +41,20 @@ It is compromised of three libraries.
 *	Install Intel SGX driver/DCAP , SDK, and psw. To install them follow the instructions given in https://github.com/intel/linux-sgx
 *	Make sure to have a machine with Linux as OS; we have tested our library only for Ubuntu 18.04, and 20.04 version.
 *  Make sure to use a CPU and NIC supported by DPDK. The list of CPUs and NIC supported by DPDK can be found at http://core.dpdk.org/supported/. (For our testing purpose we have used Intel CPUs and “igb” drivers)
+*	Install nasm 2.14 as follows;
+
+ >> wget http://www.nasm.us/pub/nasm/releasebuilds/2.14.02/nasm-2.14.02.tar.xz \
+ >> tar -xf ./nasm-2.14.02-xdoc.tar.xz –strip-components=1 \
+ >> ./configure –prefix=/usr \
+ >> make\
+ >> make install
+*	Install intel-ipsec-mb. Instructions can be found at https://github.com/intel/intel-ipsec-mb <br />
+     3.1 Configure ipsec file (ipsec.cfg). One example of ipsec.cfg can be found at (graphene/Examples/libVNF_epc/libVNF-release-socc/examples/epc/mme)
+     
+*	Install spdlog. Instructions can be found at https://github.com/gabime/spdlog
+*	Install boost (libboost-all-dev)
+*	Install libnuma, libpthread, librt, libgmp
+*	Run the following command for building graphene dependencies: 
+>> sudo apt-get install -y \   build-essential autoconf gawk bison wget python3 libcurl4-openssl-dev \
+   python3-protobuf libprotobuf-c-dev protobuf-c-compiler
 
