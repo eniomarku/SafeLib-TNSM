@@ -9,7 +9,7 @@ Note: Let say that direcotry where this library is cloned is /home/nuc/SafeLib/S
    * ./configure --no-drivers=mlx5 --enable-ptnetmap --enable-pipe --enable-monitor --enable-vale --drivers=igb --select-version=igb:5.3.5.18 
    * make && make install
     NIC=${ethInterface}
-    IP=169.254.9.9 (Choose any IP you want, make sure the IP you choose is not used in your local network)
+    IP=169.254.9.9
     NETMASK=255.255.255.0 (Recommended netmask but feel free to choose another one)
     NUMBUFS=1024
     sudo insmod ${netmap local location}/netmap.ko
@@ -46,6 +46,28 @@ Note: Let say that direcotry where this library is cloned is /home/nuc/SafeLib/S
   * make SGX=1 distclean && make SGX=1 && SGX=1 ./pal_loader load_balancer
  
  -## Run AB scenario
-   Note: A and B needs to be installed in physical hardware machines, machine B needs to have SGX installed, machine A does not have to have SGX installed
+   Note: A and B needs to be installed in different physical hardware machines, each of these hardware machines do not need to have SGX activated.
+   
+   On B machine (Let suppose that libVNF is cloned at /home/eniomb/L3VNF)
+   - Install libVNF
+       * cd /home/eniomb/L3VNF/libVNF-release-socc-b && rm -rf build 
+       * mkdir build && cd build && cmake .. -DSTACK=KERNEL && make && make install
+       
+   - Install kernel module
+       * cd /home/eniomb/L3VNF/libVNF-release-socc-b/examples/LB/backend_kernel_module && make clean && make && insmod lb_module.ko
+   - Start setkey service
+       * service setkey restart
+   - Build b and Run
+       * cd /home/eniomb/L3VNF/libVNF-release-socc-b/examples/abc/remote/ && make clean 
+       * make b-kernel-dynamic && ifconfig enp0s8 169.254.9.8 netmask 255.255.255.0 up && ./b-kernel-dynamic
+
+   On A machine (enioma)
+   - Start setkey service
+       * service setkey restart
+   - Build a and Run
+       * cd /home/enioma/ipsec-abc && ifconfig enp0s8 169.254.9.7 netmask 255.255.255.0 up 
+       *  make a && ./a 1 10 169.254.9.7 6000 169.254.9.9 5000
 
 
+
+Note: IP and netmask addresses are set here simply for demonstration purpose. Please set your own IPs, or use the same as here if your local network has those IP addresses available
