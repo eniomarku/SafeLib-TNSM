@@ -1,7 +1,7 @@
 # How to build Lib3
 Note: Let say that direcotry where this library is cloned is /home/nuc/SafeLib/SafeLib_Lib3
 - ## Install IPSec_MB
-  To intall IPSEC_MB please follow the same instructions given at  https://github.com/eniomarku/SafeLib/blob/7283ee5d5a0653d16ba7e2c23fcade6364d68590/README.md
+  To intall IPSEC_MB please follow instructions given at https://github.com/eniomarku/SafeLib-TNSM/blob/main/README.md
 - ## Install Netmap and configure
    * To install netmap first go at https://github.com/luigirizzo/netmap and git clone the project
    * cd /home/nuc/SafeLib/SafeLib_Lib3/netmap
