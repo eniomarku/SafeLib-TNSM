@@ -1,3 +1,12 @@
+# Features
+ * Written entirely in C/C++.
+ * Provide integrity and confidentiality protection of user traffic, VNF policies, and integrity of VNF code.
+ * Provide support for stateless VNFs.
+ * Provide support for kernel bypass mechanisms such as netmap
+ 
+# Prerequisites
+To run our Load balancer (LB) scenario three machines are needed, which are interconnected via an ethernet cable. Only one of the machines needs to have support for SGX. This machine will be the one where LB is running. LB is running with SGX enclave.
+
 # How to build Lib3
 Note: Let say that direcotry where this library is cloned is /home/nuc/SafeLib/SafeLib_Lib3
 - ## Install IPSec_MB
@@ -46,7 +55,6 @@ Note: Let say that direcotry where this library is cloned is /home/nuc/SafeLib/S
   * make SGX=1 distclean && make SGX=1 && SGX=1 ./pal_loader load_balancer
  
  - ## Run AB scenario
-   Note: A and B needs to be installed in different physical hardware machines, each of these hardware machines do not need to have SGX activated.
    
    On B machine (Let suppose that libVNF is cloned at /home/eniomb/L3VNF)
    - Install libVNF
