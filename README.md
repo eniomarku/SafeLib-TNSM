@@ -49,7 +49,7 @@ It is compromised of three libraries.
  >> make\
  >> make install
 *	Install intel-ipsec-mb. Instructions can be found at https://github.com/intel/intel-ipsec-mb <br />
-     ** Configure ipsec file (ipsec.cfg). One example of ipsec.cfg can be found at (graphene/Examples/libVNF_epc/libVNF-release-socc/examples/epc/mme)
+     ** Configure ipsec file (ipsec.cfg). One example of ipsec.cfg can be found at  https://github.com/eniomarku/SafeLib at (graphene/Examples/libVNF_epc/libVNF-release-socc/examples/epc/mme)
      
 *	Install spdlog. Instructions can be found at https://github.com/gabime/spdlog
 *	Install boost (libboost-all-dev)
