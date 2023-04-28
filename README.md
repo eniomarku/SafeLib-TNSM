@@ -57,4 +57,12 @@ It is compromised of three libraries.
 *	Run the following command for building graphene dependencies: 
 >> sudo apt-get install -y \   build-essential autoconf gawk bison wget python3 libcurl4-openssl-dev \
    python3-protobuf libprotobuf-c-dev protobuf-c-compiler
+   
+# Contact Information
+GitHub issue board is the preferred way to report bugs and ask questions about SafeLib.
+
+For any question, please contact us at the details given below <br />
+CONTACTS FOR THE AUTHORS\
+enio.marku@ntnu.no\
+biczok@crysys.hu
 
