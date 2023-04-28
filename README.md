@@ -57,7 +57,24 @@ It is compromised of three libraries.
 *	Run the following command for building graphene dependencies: 
 >> sudo apt-get install -y \   build-essential autoconf gawk bison wget python3 libcurl4-openssl-dev \
    python3-protobuf libprotobuf-c-dev protobuf-c-compiler
-   
+
+# Tested environment
+a) We have tested our library in the following environment:
+
+* Ubuntu 18.04
+5.3.0-28-generic kernel version
+No Intel SGX DCAP
+Intel(R) Core(TM) i7-8809G CPU @ 3.10GHz
+b) We have tested our library also for the following environment:
+
+* Ubuntu 20.04
+5.9.0-050900rc6-generic kernel version
+Intel SGX DCAP https://github.com/intel/SGXDataCenterAttestationPrimitives/
+Note: For the second type of environment some changes are needed to be done in the current version of SafeLib published in this repository, as given below:
+
+ * Uncomment the function static void netdev_no_ret_dummy at dpdk_iface.h
+ * Uncomment the part of the code between ridder added .... ridder closed at compat.h, and kni_dev.h (both part of dpdk)
+ 
 # Contact Information
 GitHub issue board is the preferred way to report bugs and ask questions about SafeLib.
 
