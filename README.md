@@ -23,12 +23,12 @@ It is compromised of three libraries.
    
 # Features:
 
-*	Written entirely in C/C++\
-*	Provides integrity and confidentiality protection of user traffic, VNF policies, and integrity of VNF code.\
-*	Provides support for stateful VNFs\
-*  Provides support for stateless VNFs\
-*	Provides support for user-level TCP stack\
-*	Provides support for kernel bypass mechanisms such as DPDK, netmap
+*	Written entirely in C/C++.
+*	Provides integrity and confidentiality protection of user traffic, VNF policies, and integrity of VNF code.
+*	Provides support for stateful VNFs.
+*  Provides support for stateless VNFs.
+*	Provides support for user-level TCP stack.
+*	Provides support for kernel bypass mechanisms such as DPDK, netmap.
 
 
 # Prerequisites
