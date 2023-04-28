@@ -45,7 +45,7 @@ Note: Let say that direcotry where this library is cloned is /home/nuc/SafeLib/S
   * cp libVNF-release-socc/examples/LB/load_balancer ./ 
   * make SGX=1 distclean && make SGX=1 && SGX=1 ./pal_loader load_balancer
  
- -## Run AB scenario
+ - ## Run AB scenario
    Note: A and B needs to be installed in different physical hardware machines, each of these hardware machines do not need to have SGX activated.
    
    On B machine (Let suppose that libVNF is cloned at /home/eniomb/L3VNF)
