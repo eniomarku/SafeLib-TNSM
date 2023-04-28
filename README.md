@@ -20,3 +20,23 @@ It is compromised of three libraries.
 ## Lib3
    This library is used for developing stateless VNFs, and securely outsourcing them into a third party provider. <br />
    Please read README.md at https://github.com/eniomarku/SafeLib-TNSM/tree/main/SafeLib_Lib3 to see how to build and run this library.
+   
+# Features:
+
+*	Written entirely in C/C++\
+*	Provides integrity and confidentiality protection of user traffic, VNF policies, and integrity of VNF code.\
+*	Provides support for stateful VNFs\
+*  Provides support for stateless VNFs\
+*	Provides support for user-level TCP stack\
+*	Provides support for kernel bypass mechanisms such as DPDK, netmap
+
+
+# Prerequisites
+1.	SafeLib makes use of Intel SGX, so first step is to make sure to run SafeLib on Intel CPU machines with support for SGX.
+2.	Make sure to have a machine with Linux as OS; we have tested our library only for Ubuntu 18.04, and 20.04 version.
+3.	Make sure to use a CPU and NIC supported by DPDK. The list of CPUs and NIC supported by DPDK can be found at http://core.dpdk.org/supported/ . For our testing purpose we have used Intel CPUs and “igb” drivers.
+4.	To run our scenarios physical machines are needed, which are interconnected via an ethernet cable. Only machines with VNFs deployed within SGX enclaves needs to have support for SGX.
+
+# Preliminary steps:
+1.	Install Intel SGX driver/DCAP , SDK, and psw. To install them follow the instructions given in https://github.com/intel/linux-sgx
+
