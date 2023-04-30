@@ -59,7 +59,7 @@ It is compromised of three libraries.
    python3-protobuf libprotobuf-c-dev protobuf-c-compiler
 
 # Tested environment
-a) We have tested our library in the following environment:
+ We have tested our library in the following environment:
 
 * Ubuntu 18.04
 5.3.0-28-generic kernel version
